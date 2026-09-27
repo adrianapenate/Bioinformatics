@@ -1,78 +1,39 @@
-# Del ADN a la Proteína
+# Bioinformatics
 
-**Autora:** Adriana Peñate Sosa
+This repository contains exercises and practical assignments completed as part of my Bioinformatics coursework.
 
-## Descripción
+The aim of this repository is to document the different activities carried out during the course, including the use of bioinformatics tools, biological databases, sequence analysis, and Python programming with Biopython.
 
-Este trabajo tiene como objetivo estudiar los principales procesos relacionados con el flujo de la información genética desde el ADN hasta la proteína.
+## Repository Structure
 
-A lo largo de los ejercicios se trabajan los procesos de replicación, transcripción y traducción, además del splicing alternativo y la relación entre la secuencia de aminoácidos, la estructura y la función de las proteínas.
+Each practical assignment is organized in its own folder.
 
-La parte práctica se ha realizado utilizando Python y Biopython.
+### DNA to Protein
 
-## Contenido de la entrega
+This assignment focuses on the main processes involved in the flow of genetic information:
 
-La entrega está formada por los siguientes archivos:
+- DNA replication
+- Transcription from DNA to RNA
+- Translation from mRNA to protein
+- Alternative splicing
+- Protein sequence and structure analysis
+- Integration of replication, transcription, and translation using Biopython
 
-- `Del ADN a la Proteína - Adriana Peñate.pdf`
-  Contiene la resolución de los ejercicios, las explicaciones teóricas y las reflexiones correspondientes.
+The folder contains the written report, Jupyter Notebook, FASTA sequence used for the analysis, and its own README with further information.
 
-- `ADNaProteína.ipynb`
-  Notebook de Jupyter que contiene los ejercicios realizados con Biopython y el pipeline final de replicación, transcripción y traducción.
+More exercises and practical assignments will be added to this repository throughout the course.
 
-- `lacZ_Ecoli_NC_000913.3.fasta`
-  Archivo FASTA que contiene la secuencia de ADN utilizada en los ejercicios prácticos.
+## Tools and Resources
 
-- `README.md`
-  Documento con la descripción del trabajo y las instrucciones necesarias para ejecutar el notebook.
-
-## Secuencia utilizada
-
-Para los ejercicios prácticos se utiliza una secuencia del gen `lacZ` de Escherichia coli, correspondiente al identificador `NC_000913.3`.
-
-La secuencia utilizada contiene 3075 nucleótidos y se encuentra almacenada en el archivo:
-
-`lacZ_Ecoli_NC_000913.3.fasta`
-
-## Ejercicios realizados
-
-1. Replicación del ADN.
-2. Transcripción del ADN a ARN.
-3. Traducción del ARNm a proteína.
-4. Splicing alternativo.
-5. Introducción a las proteínas y análisis de su estructura.
-6. Actividad integradora: del ADN a la proteína.
-
-En el último ejercicio se implementa un pipeline que integra los tres procesos principales:
-
-ADN → Replicación → Transcripción → Traducción → Proteína
-
-El programa informa de cada una de las etapas y muestra las secuencias obtenidas durante el proceso.
-
-## Requisitos
-
-Para ejecutar el notebook es necesario disponer de:
+Depending on the assignment, this repository may include the use of:
 
 - Python
-- Jupyter Notebook
 - Biopython
+- Jupyter Notebook
+- NCBI
+- Ensembl
+- Protein Data Bank (PDB)
 
-Biopython puede instalarse mediante:
+## Author
 
-    pip install biopython
-
-## Ejecución
-
-1. Descargar todos los archivos de la entrega.
-2. Mantener `ADNaProteína.ipynb` y `lacZ_Ecoli_NC_000913.3.fasta` en la misma carpeta.
-3. Abrir `ADNaProteína.ipynb` con Jupyter Notebook.
-4. Ejecutar las celdas del notebook en orden.
-
-El notebook leerá automáticamente la secuencia almacenada en el archivo FASTA y realizará los diferentes ejercicios.
-
-## Recursos utilizados
-
-- NCBI: secuencia de ADN de Escherichia coli.
-- Ensembl: consulta de transcritos e isoformas de FGFR2.
-- Protein Data Bank (PDB): visualización de la estructura 1CRN (crambin).
-- Biopython: tratamiento y análisis de secuencias biológicas.
+**Adriana Peñate Sosa**
