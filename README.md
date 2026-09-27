@@ -36,4 +36,4 @@ Depending on the assignment, this repository may include the use of:
 
 ## Author
 
-**Adriana Peñate Sosa**
+Adriana Peñate Sosa → [@adrianapenate](https://github.com/adrianapenate)
