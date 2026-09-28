@@ -7,7 +7,7 @@ Replicación, transcripción y traducción
 
 ## Código del proyecto
 
-El código se encuentra en [Bioinformatics/ADNaProteina](https://github.com/adrianapenate/Bioinformatics/tree/main/ADNaProteina).
+El código se encuentra en [Bioinformatics/ADNaProteina](https://github.com/adrianapenate/Bioinformatics/blob/main/ADNaProteina/ADNaProte%C3%ADna.ipynb).
 
 ## Ejercicio 1. Replicación del ADN
 **1.** Considera la siguiente secuencia de ADN:  5' – ATG CCG TTA GCT – 3' / 3' – TAC GGC AAT CGA – 5'.  Realiza una ronda de replicación:
