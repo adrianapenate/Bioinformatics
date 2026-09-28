@@ -16,9 +16,9 @@ hasta la formación de una proteína.
 
 ## Archivos de la práctica
 
-- [Resolución de los ejercicios — PDF](https://github.com/adrianapenate/Bioinformatics/blob/main/ADNaProteina/Del%20ADN%20a%20la%20Prote%C3%ADna%20-%20Adriana%20Pe%C3%B1ate%20-%20Analysis.pdf): enunciados, respuestas y reflexiones de los ejercicios propuestos.
+- [Resolución de los ejercicios](https://github.com/adrianapenate/Bioinformatics/blob/main/ADNaProteina/Del%20ADN%20a%20la%20Prote%C3%ADna%20-%20Adriana%20Pe%C3%B1ate%20-%20Analysis.pdf): enunciados, respuestas y reflexiones de los ejercicios propuestos.
 
-- [Código de la práctica — Notebook](https://github.com/adrianapenate/Bioinformatics/blob/main/ADNaProteina/ADNaProte%C3%ADna_Code.ipynb): implementación de la replicación, la transcripción y la traducción.
+- [Código de la práctica](https://github.com/adrianapenate/Bioinformatics/blob/main/ADNaProteina/ADNaProte%C3%ADna_Code.ipynb): implementación de la replicación, la transcripción y la traducción.
 
 ## Cómo consultar la práctica
 
