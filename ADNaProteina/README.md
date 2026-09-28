@@ -1,6 +1,6 @@
 # Del ADN a la Proteína
 
-**Biología**  
+**Bioinformática**  
 Replicación, transcripción y traducción
 
 **Autora:** Adriana Peñate Sosa
