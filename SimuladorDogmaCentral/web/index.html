@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador del dogma central</title>
+<link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script>
+</head>
+<body><main>
+<p class="eyebrow">BIOINFORMÁTICA · PRÁCTICA 01</p>
+<h1>Simulador del dogma central</h1>
+<p class="flow"><span>ADN</span> → <span>ADN</span> → <span>ARN</span> → <span>Proteína</span></p>
+<form id="form">
+<label for="sequence">ADN codificante (5′ → 3′)</label>
+<textarea id="sequence" rows="2" required spellcheck="false" aria-describedby="help">ATGCCATGGAATGCTTAA</textarea>
+<small id="help">Solo A, T, C y G. Se admiten espacios y minúsculas. Máximo 600 bases.</small>
+<button id="simulate" type="submit">Simular</button>
+<p id="error" role="alert" hidden></p>
+</form>
+<div id="results" aria-live="polite" hidden>
+<section>
+<h2><span class="number">01</span> Replicación <small>ADN → ADN</small></h2>
+<p>El ADN se copia. Cada molécula hija conserva una hebra original.</p>
+<h3>Hebra líder · síntesis continua</h3>
+<pre id="leading"></pre>
+<h3>Hebra rezagada · síntesis discontinua</h3>
+<pre id="lagging"></pre>
+<p class="explanation">La horquilla avanza hacia la derecha. La hebra líder se sintetiza en ese sentido; cada fragmento de la rezagada se sintetiza hacia la izquierda. En ambos casos, la síntesis ocurre 5′ → 3′. La rezagada final se muestra 3′ → 5′ para alinearla con su molde.</p>
+<p>La hebra líder se forma de manera continua. La rezagada se forma en fragmentos de Okazaki:</p>
+<pre id="fragments"></pre>
+<h3>Pasos de la replicación</h3>
+<ol class="replication-steps">
+<li><strong>Apertura.</strong> La topoisomerasa reduce la tensión, la helicasa separa las hebras y las proteínas SSB las mantienen separadas.</li>
+<li><strong>Cebadores.</strong> La primasa fabrica cebadores de ARN: uno para la líder y uno por fragmento de Okazaki. Proporcionan el punto de inicio de la síntesis.</li>
+<li><strong>Síntesis.</strong> La ADN polimerasa III lee los moldes 3′ → 5′ y construye ADN 5′ → 3′: continuo en la líder y por fragmentos en la rezagada.</li>
+<li><strong>Sustitución.</strong> La ADN polimerasa I elimina los cebadores y los reemplaza por ADN.</li>
+<li><strong>Unión.</strong> La ligasa sella las discontinuidades y quedan dos moléculas de ADN, cada una con una hebra original y otra nueva.</li>
+</ol>
+<p class="explanation">Los pasos describen el modelo procariota simplificado; las secuencias mostradas corresponden al ADN final.</p>
+<h3>Moléculas resultantes</h3>
+<pre id="dna"></pre>
+</section>
+<section>
+<h2><span class="number">02</span> Transcripción <small>ADN → ARN</small></h2>
+<p>La ARN polimerasa lee la hebra molde y forma un ARN mensajero complementario.</p>
+<pre id="rna"></pre>
+</section>
+<section>
+<h2><span class="number">03</span> Traducción <small>ARN → proteína</small></h2>
+<p>El ribosoma lee grupos de tres bases (codones) desde AUG hasta un codón STOP.</p>
+<pre id="codons"></pre>
+<table id="translation-table">
+<caption>Correspondencia entre codones y aminoácidos</caption>
+<thead><tr><th scope="col">N.º</th><th scope="col">Codón (5′ → 3′)</th><th scope="col">Aminoácido / señal</th></tr></thead>
+<tbody id="translation-rows"></tbody>
+</table>
+<p><strong>Cadena de aminoácidos:</strong></p>
+<pre id="protein"></pre><p id="status"></p>
+</section>
+</div>
+<footer>Modelo simplificado: una horquilla, fragmentos de 5 bases y traducción desde el primer AUG.</footer>
+</main></body></html>
+
